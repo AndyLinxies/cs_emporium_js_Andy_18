@@ -7,6 +7,14 @@
   font-family: "poppins_ex_bold";
   src: url("../../public/fonts/Poppins/Poppins-ExtraBold.ttf");
 }
+@font-face {
+  font-family: "poppins_bold";
+  src: url("../../public/fonts/Poppins/Poppins-Bold.ttf");
+}
+@font-face {
+  font-family: "poppins_semi_bold";
+  src: url("../../public/fonts/Poppins/Poppins-SemiBold.ttf");
+}
 /*!
  * Bootstrap v5.0.1 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -16853,6 +16861,196 @@ readers do not read off random characters that represent icons */
 .far {
   font-family: "Font Awesome 5 Free";
   font-weight: 400;
+}
+
+.empo-top {
+  font-family: poppins_semi_bold;
+}
+
+.nav-top {
+  margin-top: 5%;
+  width: 60%;
+  font-size: 75%;
+  color: gray;
+}
+
+.light {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 0;
+  height: 2vh;
+  margin-right: 2px;
+  border-radius: 3px;
+}
+
+.dark {
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 0;
+  height: 2vh;
+  border-radius: 3px;
+}
+
+.connex {
+  background-color: #6c757d;
+  color: white;
+  width: 10%;
+}
+
+.img-premSec {
+  width: 400px;
+}
+
+.row-premSec {
+  width: 60%;
+}
+
+.btn-sale {
+  border: none;
+  border-radius: 20px;
+  width: 40%;
+  height: 5.5vh;
+  color: white;
+}
+
+.premSec {
+  padding-left: 20%;
+  background-color: #f3f3f3;
+}
+
+.img-logo-premSec {
+  width: 100%;
+}
+
+.sec2 {
+  width: 100%;
+  height: 20vh !important;
+}
+
+.living {
+  background-image: url("../img/services/service-1.jpg");
+  background-size: cover;
+  margin-right: 2%;
+  width: 100%;
+  height: 23vh;
+}
+
+.sale {
+  background-image: url("../img/services/service-2.jpg");
+  background-size: cover;
+  margin-right: 2%;
+  width: 100%;
+  height: 23vh;
+}
+
+.clothes {
+  background-image: url("../img/services/slider-3.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 23vh;
+}
+
+.liv-sal-clo {
+  height: 20vh !important;
+}
+
+.h2-txt {
+  border-bottom: solid 2px;
+  color: white;
+  text-align: center;
+  padding-bottom: 1%;
+  padding-top: 16%;
+}
+
+h4, .h4 {
+  font-family: poppins_semi_bold;
+  margin-top: 7%;
+  text-align: center;
+  width: 100%;
+  margin-left: 9.5%;
+}
+
+.cartes {
+  margin-left: 24.5%;
+  margin-top: 5%;
+  width: 70%;
+}
+
+.promo {
+  border-radius: 50%;
+  text-align: center;
+  height: 7vh;
+  width: 21% !important;
+}
+.promo .ss-promo {
+  width: 100% !important;
+}
+
+.sous-cartes {
+  margin-left: 5%;
+  margin-top: 6%;
+  width: 100% !important;
+}
+
+.glob-cartes {
+  margin-left: -5%;
+}
+
+.discover {
+  margin-top: 5%;
+  background-image: url("../img/cta-bg.jpg");
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.discover p {
+  font-size: 300%;
+}
+.discover button {
+  margin-left: 45%;
+  border: 0;
+  border-radius: 5px;
+  background-color: #dd4545;
+  height: 4vh;
+  color: white;
+  font-size: small;
+}
+
+.h-hot {
+  margin-left: 11%;
+}
+
+.shirt-car {
+  height: 19.5vh;
+}
+
+.promoC {
+  border-radius: 50%;
+  text-align: center;
+  height: 7vh;
+  width: 29% !important;
+}
+.promoC .ss-promoC {
+  width: 100% !important;
+}
+
+.btn-carrousel {
+  width: 100%;
+  padding-left: 22%;
+}
+.btn-carrousel button {
+  border: solid 1px;
+  border-radius: 50%;
+  height: 1.7vh;
+  width: 0.3% !important;
+  margin-right: 2%;
+}
+
+body {
+  font-family: poppins;
 }
 
 /*# sourceMappingURL=app.css.map */
