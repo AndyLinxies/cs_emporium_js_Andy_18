@@ -16865,13 +16865,20 @@ readers do not read off random characters that represent icons */
 
 .empo-top {
   font-family: poppins_semi_bold;
+  margin-bottom: 3%;
 }
 
 .nav-top {
-  margin-top: 5%;
-  width: 60%;
+  padding-top: 1%;
+  width: 100%;
   font-size: 75%;
   color: gray;
+  position: fixed;
+  background-color: white;
+}
+.nav-top ul {
+  width: 70%;
+  margin-left: 14%;
 }
 
 .light {
@@ -16897,8 +16904,55 @@ readers do not read off random characters that represent icons */
   width: 10%;
 }
 
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 30px;
+}
+
+.bar {
+  height: 3px;
+  width: 100%;
+  background-color: gray;
+  border-radius: 10px;
+}
+
+@media (max-width: 700px) {
+  .toggle-button {
+    display: flex !important;
+  }
+
+  .av-ul {
+    display: none !important;
+    width: 100% !important;
+  }
+
+  .ul-nav {
+    width: 100% !important;
+    flex-direction: column !important;
+  }
+  .ul-nav li {
+    margin-top: 2% !important;
+  }
+
+  .nav-top {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    width: 100% !important;
+  }
+
+  .av-ul.active {
+    display: flex !important;
+  }
+}
 .img-premSec {
-  width: 200%;
+  width: 24rem;
 }
 
 .row-premSec {
@@ -16933,6 +16987,7 @@ readers do not read off random characters that represent icons */
   margin-right: 2%;
   width: 100%;
   height: 23vh;
+  padding: 0;
 }
 
 .sale {
@@ -16941,6 +16996,7 @@ readers do not read off random characters that represent icons */
   margin-right: 2%;
   width: 100%;
   height: 23vh;
+  padding: 0;
 }
 
 .clothes {
@@ -16948,6 +17004,7 @@ readers do not read off random characters that represent icons */
   background-size: cover;
   width: 100%;
   height: 23vh;
+  padding: 0;
 }
 
 .liv-sal-clo {
@@ -16960,6 +17017,27 @@ readers do not read off random characters that represent icons */
   text-align: center;
   padding-bottom: 1%;
   padding-top: 16%;
+  width: 90%;
+  margin-left: 4%;
+}
+
+.h2-txt:hover {
+  transition: 1s ease-in;
+  width: 50%;
+  margin: auto;
+  padding: auto;
+}
+
+.par_h2:hover {
+  transition: 0.5s ease-in;
+  height: 23vh !important;
+  background-color: black;
+  opacity: 50%;
+}
+
+.glob-cartes .row .col-4:hover {
+  transform: scale(1.1);
+  transition: 0.5s ease;
 }
 
 h4, .h4 {
@@ -17050,6 +17128,14 @@ h4, .h4 {
   background-color: white;
 }
 
+.over:hover {
+  overflow: hidden;
+}
+.over:hover .img-fluid {
+  transform: scale(1.2);
+  transition: 0.5s ease;
+}
+
 #trust1 {
   border: white 8px solid;
   height: 45vh;
@@ -17063,9 +17149,34 @@ h4, .h4 {
   border: white 8px solid;
 }
 
+#trust1:hover {
+  transition: 0.5s ease;
+  background-color: #dd4545 !important;
+}
+#trust1:hover p {
+  color: white !important;
+}
+
+#trust2:hover {
+  transition: 0.5s ease;
+  background-color: #dd4545 !important;
+}
+#trust2:hover p {
+  color: white !important;
+}
+
+#shipping:hover {
+  transition: 0.5s ease;
+  background-color: #dd4545 !important;
+}
+#shipping:hover p {
+  color: white !important;
+}
+
 .learn {
   height: 4vh;
   border-radius: 4px;
+  color: white;
 }
 
 .card-av-footer {
@@ -17112,8 +17223,98 @@ h4, .h4 {
   width: 30%;
 }
 
+.modal-glob {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s;
+}
+
+.bg-active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.mod-part1 {
+  position: relative;
+  background-color: white;
+  width: 35%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.connex {
+  cursor: pointer;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.inscription {
+  cursor: pointer;
+}
+
+.mod-part2 {
+  position: relative;
+  background-color: white;
+  width: 35%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.close2 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.modal-glob2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s;
+}
+
+.bg-active2 {
+  visibility: visible;
+  opacity: 1;
+}
+
 body {
   font-family: poppins;
+}
+
+html, body {
+  overflow-x: hidden !important;
 }
 
 /*# sourceMappingURL=app.css.map */

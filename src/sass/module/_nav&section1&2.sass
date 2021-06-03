@@ -1,10 +1,16 @@
 .empo-top
     font-family: poppins_semi_bold
+    margin-bottom: 3%
 .nav-top 
-    margin-top: 5%
-    width: 60%
+    padding-top: 1%
+    width: 100%
     font-size: 75%
     color: gray
+    position: fixed
+    background-color: white
+    ul
+        width: 70%
+        margin-left: 14%
 .light
     background-color: white
     border: 1px solid black
@@ -23,9 +29,44 @@
     color: white
     width: 10%
 
+//Hamburger 
+.toggle-button 
+    position: absolute
+    top: 0.75rem
+    right: 1rem
+    display: none
+    flex-direction: column
+    justify-content: space-between
+    width: 30px
+    height: 30px
+.bar 
+    height: 3px
+    width: 100%
+    background-color: gray 
+    border-radius: 10px
+@media ( max-width: 700px )
+    .toggle-button
+        display: flex !important
+    .av-ul 
+        display: none !important
+        width: 100% !important
+        
+    .ul-nav 
+        width: 100% !important
+        flex-direction: column !important
+        li
+            margin-top: 2% !important
+    .nav-top
+        display: flex !important
+        flex-direction: column !important
+        align-items: flex-start !important
+        width: 100% !important
+    .av-ul.active 
+        display: flex !important
+
 //Section1
 .img-premSec
-    width:200%
+    width: 24rem
 .row-premSec
     width: 60%
 .btn-sale
@@ -50,23 +91,44 @@
     margin-right: 2%
     width: 100%
     height:23vh
+    padding: 0
 .sale
     background-image: url('../img/services/service-2.jpg')
     background-size: cover
     margin-right: 2%
     width: 100%
     height:23vh
+    padding: 0
 .clothes
     background-image: url('../img/services/slider-3.jpg')
     background-size: cover
     width: 100%
     height:23vh
+    padding: 0
 .liv-sal-clo
     height: 20vh !important
 .h2-txt
-    border-bottom: solid 2px
+    border-bottom: solid 2px 
     color: white
     text-align: center
     padding-bottom: 1%
     padding-top: 16%
+    width: 90%
+    margin-left: 4%
+.h2-txt:hover 
+    transition: 1s ease-in
+    width: 50%
+    margin: auto
+    padding: auto
+    
+.par_h2:hover
+    transition: 0.5s ease-in
+    height: 23vh !important
+    background-color: black
+    opacity: 50%
 
+.glob-cartes 
+    .row 
+        .col-4:hover
+            transform: scale(1.1)
+            transition: 0.5s ease

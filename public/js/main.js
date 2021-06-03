@@ -64,3 +64,69 @@ function changeSlide() {
 };
 
 window.onload = changeSlide;
+
+//Comportement de la nav au Scroll
+let nav = document.querySelector('.nav-top')
+window.addEventListener('scroll', () => {
+    if (window.scrollY >= 15) {
+        nav.style.borderBottom = '2px solid'
+        nav.style.top="0"
+        nav.style.transition = '0.5s ease-out'
+    } else {
+        nav.style.top=""
+        nav.style.borderBottom = '1px solid white'
+    }
+})
+
+// Darkmode
+let dark = document.querySelector('.dark')
+let light = document.querySelector('.light')
+let body = document.querySelector('body')
+
+dark.addEventListener('click',()=>{
+    body.style.backgroundColor ="black"
+    body.style.color = "white"
+})
+light.addEventListener('click',()=>{
+    body.style.backgroundColor ="white"
+    body.style.color = "black"
+})
+
+//MODAL1
+let modal1 = document.querySelector('.mod-part1')
+let connex = document.querySelector('.connex')
+let modal_glob= document.querySelector('.modal-glob')
+
+connex.addEventListener('click',()=>{
+    modal_glob.classList.add('bg-active')
+    
+
+})
+//Fermer le modal 1
+let close= document.querySelector('.close')
+close.addEventListener('click',()=>{
+    modal_glob.classList.remove('bg-active')
+    
+})
+//MODAL 2
+let modal_glob2= document.querySelector('.modal-glob2')
+
+let modal2 = document.querySelector('.mod-part2')
+let close2 = document.querySelector('.close2')
+let inscription= document.querySelector(".inscription")
+
+inscription.addEventListener('click',()=>{
+    modal_glob.classList.remove('bg-active')
+    modal_glob2.classList.add('bg-active2')
+    console.log(modal_glob2);
+})
+close2.addEventListener('click',()=>{
+    modal_glob2.classList.remove('bg-active2')
+})
+
+//Hamburger
+let toggle_button = document.querySelector('.toggle-button')
+let av_ul = document.querySelector('.av-ul')
+toggle_button.addEventListener('click',()=>{
+    av_ul.classList.toggle('active')
+})

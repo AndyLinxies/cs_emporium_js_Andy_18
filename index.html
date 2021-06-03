@@ -12,25 +12,30 @@
 <body>
     <header>
         <h1 class="text-center mt-5 empo-top"> emporium.</h1>
-        <nav class="container nav-top">
-            <ul class="ul-nav d-flex list-unstyled justify-content-center justify-content-around">
-                <li>HOME</li>
-                <li>PRODUCT</li>
-                <li>BOG</li>
-                <li>ELEMENTS</li>
-                <li>ABOUT</li>
-                <li>CONTACT</li>
-                <li class="li-dark">
-                    <button class="light"></button>
-                    <button class="dark"></button>
-                </li>
-                <li class="connex text">CONNEXION</li>
-            </ul>
-            <div>
-                <ul>
-
+        <nav class="container-fluid nav-top">
+            <!-- Hamburger -->
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <!-- Fin Hamburger -->
+            <div class= av-ul>
+                <ul class="ul-nav d-flex list-unstyled justify-content-center justify-content-around">
+                    <li>HOME</li>
+                    <li>PRODUCT</li>
+                    <li>BOG</li>
+                    <li>ELEMENTS</li>
+                    <li>ABOUT</li>
+                    <li>CONTACT</li>
+                    <li class="li-dark">
+                        <button class="light"></button>
+                        <button class="dark"></button>
+                    </li>
+                    <li class="connex text">CONNEXION</li>
                 </ul>
             </div>
+            
         </nav>
     </header>
     <!-- Section 1 sous nav -->
@@ -38,9 +43,9 @@
         <div class="container-fluid justify-content-center premSec">
             <div class="row justify-content-center row-premSec pt-4 ">
                 <div class="col-8 justify-content-center pt-5">
-                    <h1 class="shop text-danger">Shop at</h1>
+                    <h1 class="shop text-danger pt-5">Shop at</h1>
                     <img class="img-logo-premSec" src="./public/img/logo.png" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sequi blanditiis maiores?
+                    <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sequi blanditiis maiores?
                         Recusandae fugit labore magnam perspiciatis doloribus quos laudantium.</p>
                     <button class="bg-danger btn-sale">Sale items</button>
                 </div>
@@ -55,13 +60,20 @@
         <div class="container-fluid liv-sal-clo d-flex justify-content-center">
             <div class="row justify-content-center sec2">
                 <div class="col living">
-                    <h2 class="h2-txt">Living Room</h2>
+                    <div class="par_h2">
+                        <h2 class="h2-txt">Living Room</h2> 
+                    </div>
                 </div>
                 <div class="col sale">
-                    <h2 class="h2-txt">Sale items</h2>
+                    <div class="par_h2">
+                        <h2 class="h2-txt">Sale items</h2>
+                    </div>
                 </div>
                 <div class="col clothes">
-                    <h2 class="h2-txt">Clothes</h2>
+                    <div class="par_h2">
+                        <h2 class="h2-txt">Clothes</h2> 
+                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -154,13 +166,21 @@
             <!-- Premier slide -->
             <div class=slide1>
                 <div class="row justify-content-center cartes">
-                    <div class="col"><img class="img-fluid" src="./public/img/products_mini/product-luxry-sofa.jpg"
+                    <div class="col">
+                        <div class="over">
+                            <img class="img-fluid" src="./public/img/products_mini/product-luxry-sofa.jpg"
                             alt="">
+                        </div>
+                        
                         <p class=mt-4>Luxury Sofa</p>
                         <p class="text-danger">$600.00</p>
                     </div>
-                    <div class="col"><img class="img-fluid" src="./public/img/products_mini/product-gloves.jpg"
+                    <div class="col">
+                        <div class="over">
+                            <img class="img-fluid" src="./public/img/products_mini/product-gloves.jpg"
                             alt="">
+                        </div>
+                        
                         <div class="row text-center w-100 sous-cartes">
                             <div class="col-4 bg-danger text-white text-center pt-3 w-25 promoC">
                                 <p class="w-100 ss-promoC">SALE!</p>
@@ -171,11 +191,19 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col"><img class="img-fluid" src="./public/img/products_mini/product-cups.jpg" alt="">
+                    <div class="col">
+                        <div class="over">
+                            <img class="img-fluid" src="./public/img/products_mini/product-cups.jpg" alt="">
+                        </div>
+                        
                         <p class="mt-4">Colorful Bowl</p>
                         <p class="text-danger">$18.00</p>
                     </div>
-                    <div class="col"><img class="img-fluid shirt-car" src="./public/img/products/product-tshitr-white-700x500.jpg" alt="">
+                    <div class="col">
+                        <div class="over">
+                            <img class="img-fluid shirt-car" src="./public/img/products/product-tshitr-white-700x500.jpg" alt="">
+                        </div>
+                        
                         <p class=mt-4>Lorem T-shirt</p>
                         <p class="text-danger">$600.00</p>
                     </div>
@@ -184,11 +212,19 @@
             <!-- Deuxieme slide -->
             <div class="slide2">
                 <div class="row justify-content-center cartes">
-                    <div class="col"><img class="img-fluid" src="./public/img/products_mini/product-bag.jpg" alt="">
+                    <div class="col">
+                        <div class="over">
+                            <img class="img-fluid" src="./public/img/products_mini/product-bag.jpg" alt="">
+                        </div>
+                        
                         <p class=mt-4>Luxury Sofa</p>
                         <p class="text-danger">$600.00</p>
                     </div>
-                    <div class="col"><img class="img-fluid" src="./public/img/products_mini/product-tshitr.jpg" alt="">
+                    <div class="col">
+                        <div class="over">
+                            <img class="img-fluid" src="./public/img/products_mini/product-tshitr.jpg" alt="">
+                        </div>
+                        
                         <div class="row text-center w-100 sous-cartes">
                             <div class="col-4 bg-danger text-white text-center pt-3 w-25 promoC">
                                 <p class="w-100 ss-promoC">SALE!</p>
@@ -199,12 +235,20 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col"><img class="img-fluid" src="./public/img/products_mini/product-plates.jpg" alt="">
+                    <div class="col">
+                        <div class="over">
+                            <img class="img-fluid" src="./public/img/products_mini/product-plates.jpg" alt="">
+                        </div>
+                        
                         <p class="mt-4">Colorful Bowl</p>
                         <p class="text-danger">$18.00</p>
                     </div>
-                    <div class="col"><img class="img-fluid" src="./public/img/products_mini/product-modern-sofa.jpg"
+                    <div class="col">
+                        <div class="over">
+                            <img class="img-fluid" src="./public/img/products_mini/product-modern-sofa.jpg"
                         alt="">
+                        </div>
+                        
                     <p class=mt-4>Modern Sofa</p>
                     <p class="text-danger">$900.00</p>
                 </div>
@@ -213,12 +257,20 @@
             <!-- Troisième slide -->
             <div class="slide3">
                 <div class="row justify-content-center cartes">
-                    <div class="col text-center"><img class="img-fluid" src="./public/img/products_mini/product-modern-sofa.jpg"
+                    <div class="col text-center">
+                        <div class="over">
+                            <img class="img-fluid" src="./public/img/products_mini/product-modern-sofa.jpg"
                             alt="">
+                        </div>
+                        
                         <p class=mt-4>Modern Sofa</p>
                         <p class="text-danger">$900.00</p>
                     </div>
-                    <div class="col"><img class="img-fluid" src="./public/img/products_mini/product-bed.jpg" alt="">
+                    <div class="col">
+                        <div class="over">
+                            <img class="img-fluid" src="./public/img/products_mini/product-bed.jpg" alt="">
+                        </div>
+                        
                         <div class="row text-center w-100 sous-cartes">
                             <div class="col text-center">
                                 <p class='mt-2'>Bed linen</p>
@@ -226,11 +278,19 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col text-center"><img class="img-fluid" src="./public/img/products_mini/product-shoes.jpg" alt="">
+                    <div class="col text-center">
+                        <div class="over">
+                            <img class="img-fluid" src="./public/img/products_mini/product-shoes.jpg" alt="">
+                        </div>
+                        
                         <p class="mt-4">Minimal Shoes</p>
                         <p class="text-danger">$60.00</p>
                     </div>
-                    <div class="col text-center"><img class="img-fluid" src="./public/img/products/product-jacket-700x500.jpg" alt="">
+                    <div class="col text-center">
+                        <div class="over">
+                            <img class="img-fluid" src="./public/img/products/product-jacket-700x500.jpg" alt="">
+                        </div>
+                        
                         <p class="mt-4">Jackets</p>
                         <p class="text-danger">$20.00</p>
                     </div>
@@ -240,12 +300,20 @@
             <!-- Dernier slide -->
             <div class="slide4">
                 <div class="row justify-content-center cartes">
-                    <div class="col text-center"><img class="img-fluid" src="./public/img/products_mini/product-cups.jpg"
+                    <div class="col text-center">
+                        <div class="over">
+                            <img class="img-fluid" src="./public/img/products_mini/product-cups.jpg"
                             alt="">
+                        </div>
+                        
                         <p class=mt-4>Modern Sofa</p>
                         <p class="text-danger">$900.00</p>
                     </div>
-                    <div class="col"><img class="img-fluid" src="./public/img/products_mini/product-gloves.jpg" alt="">
+                    <div class="col">
+                        <div class="over">
+                            <img class="img-fluid" src="./public/img/products_mini/product-gloves.jpg" alt="">
+                        </div>
+                        
                         <div class="row text-center w-100 sous-cartes">
                             <div class="col text-center">
                                 <p class='mt-2'>Bed linen</p>
@@ -253,11 +321,19 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col text-center"><img class="img-fluid" src="./public/img/products_mini/product-plates.jpg" alt="">
+                    <div class="col text-center">
+                        <div class="over">
+                            <img class="img-fluid" src="./public/img/products_mini/product-plates.jpg" alt="">
+                        </div>
+                        
                         <p class="mt-4">Minimal Shoes</p>
                         <p class="text-danger">$60.00</p>
                     </div>
-                    <div class="col text-center"><img class="img-fluid" src="./public/img/products_mini/product-bed.jpg" alt="">
+                    <div class="col text-center">
+                        <div class="over">
+                            <img class="img-fluid" src="./public/img/products_mini/product-bed.jpg" alt="">
+                        </div>
+                        
                         <p class="mt-4">Jackets</p>
                         <p class="text-danger">$20.00</p>
                     </div>
@@ -280,26 +356,26 @@
                 <div id="trust1" class="col-4 text-center bg-light">
                     <i class="far fa-2x fa-check-circle mt-5 text-dark"></i>
                     <p class="mt-4 font-weight-bold text-dark p-bold">TRUSTED BY 10.000+ CUSTOMERS</p>
-                    <p class="mt-4 text-dark">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, quis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, culpa.</p>
+                    <p class="mt-4 text-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, quis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, culpa.</p>
                     <button class="bg-dark text-white border-0 mb-3 learn">Learn more</button>
                 </div>
-                <div id="shipping" class="col-4 bg-danger text-white text-center border-white">
-                    <i class="fas fa-2x fa-paper-plane mt-5"></i>
-                    <p class="mt-4 font-weight-bold p-bold">  VERY FAST SHIPPING</p>
-                    <p class="mt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, quis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, dolor!</p>
-                    <button class="border-0 mb-3 learn">Learn more</button>
+                <div id="shipping" class="col-4 bg-light text-center border-white">
+                    <i class="fas fa-2x fa-paper-plane mt-5 text-dark"></i>
+                    <p class="mt-4 font-weight-bold p-bold text-dark">  VERY FAST SHIPPING</p>
+                    <p class="mt-4 text-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, quis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, dolor!</p>
+                    <button class="border-0 mb-3 learn bg-dark ">Learn more</button>
                 </div>
                 <div id="trust2" class="col-4 text-center bg-light">
                     <i class="far fa-2x fa-check-circle mt-5 text-dark"></i>
                     <p class="mt-4 font-weight-bold text-dark p-bold">TRUSTED BY 10.000+ CUSTOMERS</p>
-                    <p class="mt-4 text-dark">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, quis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias, vitae!</p>
+                    <p class="mt-4 text-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, quis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias, vitae!</p>
                     <button class="bg-dark text-white border-0 mb-3 learn">Learn more</button>
                 </div>
             </div>
         </div>
     </section>
     <!-- Footer -->
-    <section class="footer">
+    <footer class="footer">
         <div class="container cont-foot">
         <div class="row foot-glob">
             <div class="col-4">
@@ -339,7 +415,39 @@
         
     </div>
     <div id="copyright" class="text-secondary text-center">COPYRIGHT 2020 GOODLAYERS, ALL RIGHT RESERVED</div>
-    </section>
+    </footer>
+    <!-- MODAL -->
+    <div class="modal-glob">
+        <div class="mod-part1">
+            <h3>Connexion</h3>
+        <p>Nom d'utilisateur</p>
+        <input type="text">
+        <p class="mt-3">Mot de passe</p>
+        <input type="password">
+        <button class="mt-3 border-1 bg-primary text-white" >CONNEXION</button>
+        <p class="mt-2">Pas encore de compte ? <span class="text-primary inscription ">S'inscrire</span> </p>
+        <span class="close">X </span>
+        </div>
+        
+    </div>
+    <div class="modal-glob2">
+        <div class="mod-part2">
+            <h3>Inscription</h3>
+            <p>Nom</p>
+            <input type="text">
+            <p>Prenom</p>
+            <input type="text">
+            <p>E-mail</p>
+            <input type="email">
+            <p>Mot de passe</p>
+            <input type="password">
+            <p>Confirmation de mot de passe</p>
+            <input type="password">
+            <span class="close2">X </span>
+        </div>
+    </div>
+    
+    <!--  -->
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <script src="./public/js/main.js"></script>
