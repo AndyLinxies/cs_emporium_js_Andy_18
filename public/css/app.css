@@ -16902,6 +16902,8 @@ readers do not read off random characters that represent icons */
   background-color: #6c757d;
   color: white;
   width: 10%;
+  padding-top: 0.5%;
+  padding-left: 1%;
 }
 
 .toggle-button {
@@ -17441,10 +17443,18 @@ h4, .h4 {
   .promo {
     display: none !important;
   }
+
+  .connex {
+    width: 15% !important;
+  }
 }
 @media screen and (min-width: 1000px) and (max-width: 1024px) {
   .promo {
     display: none;
+  }
+
+  .connex {
+    width: 11% !important;
   }
 }
 body {

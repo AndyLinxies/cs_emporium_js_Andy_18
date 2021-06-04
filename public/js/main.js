@@ -9,136 +9,74 @@ let slide1 = document.getElementsByClassName('slide1')[0]
 let slide2 = document.getElementsByClassName('slide2')[0]
 let slide3 = document.getElementsByClassName('slide3')[0]
 let slide4 = document.getElementsByClassName('slide4')[0]
+let slideTab = [slide1,slide2,slide3,slide4]
 
 //Cacher les autres slides de base
-slide2.style.display = 'none'
-slide3.style.display = 'none'
-slide4.style.display = 'none'
-slide1.style.display = 'none'
-// Au clique de chaque boutton
-tabtn.forEach(element => {
-    element.addEventListener('click', () => {
+slide1.classList.add('active')
+slide2.classList.remove('active')
+slide3.classList.remove('active')
+slide4.classList.remove('active')
+
+//Au clique de chaque boutton
+tabtn.forEach((element,i) => {
+    element.addEventListener('click',()=>{
         switch (element.id) {
             case 'btn1':
-                slide2.style.display = 'none'
-                slide3.style.display = 'none'
-                slide4.style.display = 'none'
-                slide1.style.display = 'flex'
-                slide1.className=' slide1 carousel-item active';
-                slide2.className='slide2 carousel-item';
-                slide3.className='slide3 carousel-item' ;
-                slide4.className='slide3 carousel-item ' ;
-                // slides.forEach(element => {
-                //     if (element.classList.contains("active")) {
-                //         element.classList.remove("active");
-                //         element.style.display = "none"
-                //     }
-
-                // });
-
-                break;
-            case 'btn2':
-                slide1.style.display = 'none'
-                slide3.style.display = 'none'
-                slide4.style.display = 'none'
-                slide2.style.display = 'flex'
-                // slides.forEach(element => {
-                //     if (element.classList.contains("active")) {
-                //         element.classList.remove("active");
-                //         element.style.transition = ' ease-out'
-                //         element.style.display = "none"
-                //     }
-
-                // });
-        slide1.className=' slide1 carousel-item ';
-        slide2.className='slide2 carousel-item active';
-        slide3.className='slide3 carousel-item' ;
-        slide4.className='slide3 carousel-item ' ;
-                break;
-            case 'btn3':
-                slide1.style.display = 'none'
-                slide2.style.display = 'none'
-                slide4.style.display = 'none'
-                slide3.style.display = 'flex'
-                // slides.forEach(element => {
-                //     if (element.classList.contains("active")) {
-                //         element.classList.remove("active");
-                //         element.style.transition = ' ease-out'
-                //         element.style.display = "none"
-                //     }
-
-                // });
-                slide1.className=' slide1 carousel-item ';
-                slide2.className='slide2 carousel-item';
-                slide3.className='slide3 carousel-item active' ;
-                slide4.className='slide3 carousel-item ' ;
+                slide2.classList.remove('active')
+                slide3.classList.remove('active')
+                slide4.classList.remove('active')
+                slide1.classList.add('active')
                 
-                break;
-            
+            break;
+            case 'btn2':
+                slide1.classList.remove('active')
+                slide3.classList.remove('active')
+                slide4.classList.remove('active')
+                slide2.classList.add('active')
+                
+            break;
+            case 'btn3':
+                slide1.classList.remove('active')
+                slide2.classList.remove('active')
+                slide4.classList.remove('active')
+                slide3.classList.add('active')
+                
+            break;
             case 'btn4':
-                slide1.style.display = 'none'
-                slide2.style.display = 'none'
-                slide3.style.display = 'none'
-                slide4.style.display = 'flex'
-                // slides.forEach(element => {
-                //     if (element.classList.contains("active")) {
-                //         element.classList.remove("active");
-                //         element.style.transition = ' ease-out'
-                //         element.style.display = "none"
-                //     }
-
-                // });
-        slide1.className=' slide1 carousel-item ';
-        slide2.className='slide2 carousel-item';
-        slide3.className='slide3 carousel-item' ;
-        slide4.className='slide3 carousel-item active' ;
-                break;
+                slide1.classList.remove('active')
+                slide2.classList.remove('active')
+                slide3.classList.remove('active')
+                slide4.classList.add('active')
+                
+            break;
 
             default:
                 console.log("Error");
-                break;
+            break;
         }
     })
-});
-//Defilement des slides
-let carr = document.getElementsByClassName('carrousel')[0];
+    
+}); 
 
-let slides = [slide1, slide2, slide3, slide4];
 let i = 0
-let time = 2000;
-
 window.setInterval(() => {
     if (slide1.classList.contains("active") || slide2.classList.contains("active") || slide3.classList.contains("active") || slide4.classList.contains("active")) {
         slide1.classList.remove("active");
         slide2.classList.remove("active");
         slide3.classList.remove("active");
         slide4.classList.remove("active");
-
+        
 
         if (i == 4) {
             i = 0;
         }
-
+        slideTab[i].classList.add("active");
+        i++;
     }
-    slides[i].classList.add("active");
-    i++;
-    
+}, 2000);
+//Fin essai
 
-    slides.forEach(element => {
-        if (element.style.display != 'none') {
-            element.style.display = 'none'
-            element.classList.remove("active");
-            element.style.transition = "1s ease "
-        }
-    });
-}, time)
 
-// slides.forEach(element => {
-//     if (!element.classList.contains("active")) {
-//         element.style.transition ='3s ease-out'
-//     }
-
-//});
 
 //Comportement de la nav au Scroll
 let nav = document.querySelector('.nav-top')
@@ -175,7 +113,6 @@ let modal_glob = document.querySelector('.modal-glob')
 connex.addEventListener('click', () => {
     modal_glob.classList.add('bg-active')
 
-
 })
 //Fermer le modal 1
 let close = document.querySelector('.close')
@@ -200,6 +137,7 @@ inscription.addEventListener('click', () => {
 close2.addEventListener('click', () => {
     modal_glob2.classList.remove('bg-active2')
 })
+
 
 //Hamburger
 let toggle_button = document.querySelector('.toggle-button')
@@ -265,3 +203,35 @@ avFooter.forEach(element => {
         element.style.transition = '0.5s ease-out'
     })
 });
+
+//coloration btn 
+btn1.addEventListener('click', () => {
+    btn1.style.backgroundColor = 'black'
+    btn2.style.backgroundColor = ''
+    btn3.style.backgroundColor = ''
+    btn4.style.backgroundColor = ''
+    
+})
+btn2.addEventListener('click', () => {
+    btn1.style.backgroundColor = ''
+    btn2.style.backgroundColor = 'black'
+    btn3.style.backgroundColor = ''
+    btn4.style.backgroundColor = ''
+    
+})
+btn3.addEventListener('click', () => {
+    btn1.style.backgroundColor = ''
+    btn2.style.backgroundColor = ''
+    btn3.style.backgroundColor = 'black'
+    btn4.style.backgroundColor = ''
+    
+})
+btn4.addEventListener('click', () => {
+    btn1.style.backgroundColor = ''
+    btn2.style.backgroundColor = ''
+    btn3.style.backgroundColor = ''
+    btn4.style.backgroundColor = 'black'
+    
+})
+
+
