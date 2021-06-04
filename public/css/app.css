@@ -16985,7 +16985,7 @@ readers do not read off random characters that represent icons */
   background-image: url("../img/services/service-1.jpg");
   background-size: cover;
   margin-right: 2%;
-  width: 100%;
+  width: 30%;
   height: 23vh;
   padding: 0;
 }
@@ -16994,7 +16994,7 @@ readers do not read off random characters that represent icons */
   background-image: url("../img/services/service-2.jpg");
   background-size: cover;
   margin-right: 2%;
-  width: 100%;
+  width: 30%;
   height: 23vh;
   padding: 0;
 }
@@ -17002,7 +17002,7 @@ readers do not read off random characters that represent icons */
 .clothes {
   background-image: url("../img/services/slider-3.jpg");
   background-size: cover;
-  width: 100%;
+  width: 30%;
   height: 23vh;
   padding: 0;
 }
@@ -17019,13 +17019,13 @@ readers do not read off random characters that represent icons */
   padding-top: 16%;
   width: 90%;
   margin-left: 4%;
-}
-
-.h2-txt:hover {
-  transition: 1s ease-in;
-  width: 50%;
   margin: auto;
   padding: auto;
+}
+
+.h2-txt.bouge {
+  transition: 1s ease-in;
+  width: 50%;
 }
 
 .par_h2:hover {
@@ -17052,6 +17052,11 @@ h4, .h4 {
   margin-left: 24.5%;
   margin-top: 5%;
   width: 70%;
+}
+
+.moove {
+  transform: scale(1.1);
+  transition: 0.5s ease;
 }
 
 .promo {
@@ -17128,10 +17133,11 @@ h4, .h4 {
   background-color: white;
 }
 
-.over:hover {
+.over {
   overflow: hidden;
 }
-.over:hover .img-fluid {
+
+.zzom {
   transform: scale(1.2);
   transition: 0.5s ease;
 }
@@ -17149,27 +17155,11 @@ h4, .h4 {
   border: white 8px solid;
 }
 
-#trust1:hover {
+.rred {
   transition: 0.5s ease;
   background-color: #dd4545 !important;
 }
-#trust1:hover p {
-  color: white !important;
-}
-
-#trust2:hover {
-  transition: 0.5s ease;
-  background-color: #dd4545 !important;
-}
-#trust2:hover p {
-  color: white !important;
-}
-
-#shipping:hover {
-  transition: 0.5s ease;
-  background-color: #dd4545 !important;
-}
-#shipping:hover p {
+.rred p {
   color: white !important;
 }
 
@@ -17309,6 +17299,154 @@ h4, .h4 {
   opacity: 1;
 }
 
+.active {
+  display: flex !important;
+  transition: 2s ease-in;
+}
+
+.notActive {
+  display: none !important;
+  transition: 2s ease-out;
+}
+
+@media screen and (min-width: 500px) and (max-width: 768px) {
+  .btn-sale {
+    height: 6.7vh !important;
+  }
+
+  .h2-txt {
+    padding-top: 25% !important;
+  }
+
+  .cartes {
+    font-size: 80% !important;
+  }
+
+  .promo {
+    width: 25% !important;
+    font-size: 70% !important;
+    height: 6vh;
+  }
+
+  .tshirt {
+    height: 10.5vh;
+  }
+
+  .footer {
+    height: 50vh;
+  }
+
+  .cont-foot {
+    height: 50vh;
+  }
+
+  .av-span span {
+    padding: 3% !important;
+    display: inline-block;
+  }
+
+  .lesSpan {
+    height: 9.5vh !important;
+    margin-top: 3% !important;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .tshirt {
+    height: 25vh !important;
+  }
+
+  .premSec {
+    font-size: 90% !important;
+  }
+
+  .img-premSec {
+    width: 260px !important;
+  }
+
+  .btn-sale {
+    height: 9vh !important;
+  }
+
+  .h2-txt {
+    padding-top: 20% !important;
+  }
+
+  .cartes {
+    font-size: 80% !important;
+  }
+
+  .promo {
+    display: none;
+  }
+
+  .promoC {
+    display: none !important;
+  }
+
+  .tshirt {
+    height: 10.5vh;
+  }
+
+  .footer {
+    height: 100vh;
+  }
+
+  .cont-foot {
+    height: 100vh;
+  }
+
+  .av-span span {
+    padding: 3% !important;
+    display: inline-block;
+  }
+
+  .lesSpan {
+    height: 6vh !important;
+    margin-top: 3% !important;
+  }
+
+  .secG2 {
+    height: 90vh !important;
+  }
+
+  .sec2 {
+    height: 90vh !important;
+  }
+
+  .glob-cartes {
+    padding-right: 10% !important;
+  }
+
+  .txt-disc {
+    font-size: 2.5rem !important;
+  }
+
+  #copyright {
+    font-size: 90% !important;
+  }
+
+  .living {
+    width: 100% !important;
+  }
+
+  .sale {
+    width: 100% !important;
+  }
+
+  .clothes {
+    width: 100% !important;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 768px) {
+  .promo {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1024px) {
+  .promo {
+    display: none;
+  }
+}
 body {
   font-family: poppins;
 }
