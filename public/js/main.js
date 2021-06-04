@@ -24,156 +24,74 @@ tabtn.forEach(element => {
                 slide3.style.display = 'none'
                 slide4.style.display = 'none'
                 slide1.style.display = 'flex'
-                slides.forEach(element => {
-                    if (element.classList.contains("active")) {
-                        element.classList.remove("active");
-                        element.style.display = "none"
-                    }
+                slide1.className=' slide1 carousel-item active';
+                slide2.className='slide2 carousel-item';
+                slide3.className='slide3 carousel-item' ;
+                slide4.className='slide3 carousel-item ' ;
+                // slides.forEach(element => {
+                //     if (element.classList.contains("active")) {
+                //         element.classList.remove("active");
+                //         element.style.display = "none"
+                //     }
 
-                });
-                window.setInterval(() => {
-                    if (slide1.classList.contains("active") || slide2.classList.contains("active") || slide3.classList.contains("active") || slide4.classList.contains("active")) {
-                        slide1.classList.remove("active");
-                        slide2.classList.remove("active");
-                        slide3.classList.remove("active");
-                        slide4.classList.remove("active");
-                
-                
-                        if (i == 4) {
-                            i = 0;
-                        }
-                
-                    }
-                    slides[i].classList.add("active");
-                    i++;
-                    
-                
-                    // slides.forEach(element => {
-                    //     if (element.style.display != 'none') {
-                    //         element.style.display = 'none'
-                    //         element.classList.remove("active");
-                    //         element.style.transition = "1s ease "
-                    //     }
-                    // });
-                }, 2700)
+                // });
+
                 break;
             case 'btn2':
                 slide1.style.display = 'none'
                 slide3.style.display = 'none'
                 slide4.style.display = 'none'
                 slide2.style.display = 'flex'
-                slides.forEach(element => {
-                    if (element.classList.contains("active")) {
-                        element.classList.remove("active");
-                        element.style.transition = ' ease-out'
-                        element.style.display = "none"
-                    }
+                // slides.forEach(element => {
+                //     if (element.classList.contains("active")) {
+                //         element.classList.remove("active");
+                //         element.style.transition = ' ease-out'
+                //         element.style.display = "none"
+                //     }
 
-                });
-                window.setInterval(() => {
-                    if (slide1.classList.contains("active") || slide2.classList.contains("active") || slide3.classList.contains("active") || slide4.classList.contains("active")) {
-                        slide1.classList.remove("active");
-                        slide2.classList.remove("active");
-                        slide3.classList.remove("active");
-                        slide4.classList.remove("active");
-                
-                
-                        if (i == 4) {
-                            i = 0;
-                        }
-                
-                    }
-                    slides[i].classList.add("active");
-                    i++;
-                    
-                
-                    // slides.forEach(element => {
-                    //     if (element.style.display != 'none') {
-                    //         element.style.display = 'none'
-                    //         element.classList.remove("active");
-                    //         element.style.transition = "1s ease "
-                    //     }
-                    // });
-                }, 3000)
+                // });
+        slide1.className=' slide1 carousel-item ';
+        slide2.className='slide2 carousel-item active';
+        slide3.className='slide3 carousel-item' ;
+        slide4.className='slide3 carousel-item ' ;
                 break;
             case 'btn3':
                 slide1.style.display = 'none'
                 slide2.style.display = 'none'
                 slide4.style.display = 'none'
                 slide3.style.display = 'flex'
-                slides.forEach(element => {
-                    if (element.classList.contains("active")) {
-                        element.classList.remove("active");
-                        element.style.transition = ' ease-out'
-                        element.style.display = "none"
-                    }
+                // slides.forEach(element => {
+                //     if (element.classList.contains("active")) {
+                //         element.classList.remove("active");
+                //         element.style.transition = ' ease-out'
+                //         element.style.display = "none"
+                //     }
 
-                });
-                window.setInterval(() => {
-                    if (slide1.classList.contains("active") || slide2.classList.contains("active") || slide3.classList.contains("active") || slide4.classList.contains("active")) {
-                        slide1.classList.remove("active");
-                        slide2.classList.remove("active");
-                        slide3.classList.remove("active");
-                        slide4.classList.remove("active");
+                // });
+                slide1.className=' slide1 carousel-item ';
+                slide2.className='slide2 carousel-item';
+                slide3.className='slide3 carousel-item active' ;
+                slide4.className='slide3 carousel-item ' ;
                 
-                
-                        if (i == 4) {
-                            i = 0;
-                        }
-                
-                    }
-                    slides[i].classList.add("active");
-                    i++;
-                    
-                
-                    // slides.forEach(element => {
-                    //     if (element.style.display != 'none') {
-                    //         element.style.display = 'none'
-                    //         element.classList.remove("active");
-                    //         element.style.transition = "1s ease "
-                    //     }
-                    // });
-                }, 3000)
                 break;
-               
+            
             case 'btn4':
                 slide1.style.display = 'none'
                 slide2.style.display = 'none'
                 slide3.style.display = 'none'
                 slide4.style.display = 'flex'
-                slides.forEach(element => {
-                    if (element.classList.contains("active")) {
-                        element.classList.remove("active");
-                        element.style.transition = ' ease-out'
-                        element.style.display = "none"
-                    }
+                // slides.forEach(element => {
+                //     if (element.classList.contains("active")) {
+                //         element.classList.remove("active");
+                //         element.style.transition = ' ease-out'
+                //         element.style.display = "none"
+                //     }
 
-                });
-                window.setInterval(() => {
-                    if (slide1.classList.contains("active") || slide2.classList.contains("active") || slide3.classList.contains("active") || slide4.classList.contains("active")) {
-                        slide1.classList.remove("active");
-                        slide2.classList.remove("active");
-                        slide3.classList.remove("active");
-                        slide4.classList.remove("active");
-                
-                
-                        if (i == 4) {
-                            i = 0;
-                        }
-                
-                    }
-                    slides[i].classList.add("active");
-                    i++;
-                    
-                
-                    // slides.forEach(element => {
-                    //     if (element.style.display != 'none') {
-                    //         element.style.display = 'none'
-                    //         element.classList.remove("active");
-                    //         element.style.transition = "1s ease "
-                    //     }
-                    // });
-                }, 300)
+                // });
+        slide1.className=' slide1 carousel-item ';
+        slide2.className='slide2 carousel-item';
+        slide3.className='slide3 carousel-item' ;
+        slide4.className='slide3 carousel-item active' ;
                 break;
 
             default:
