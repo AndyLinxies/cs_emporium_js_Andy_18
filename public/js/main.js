@@ -106,6 +106,14 @@ light.addEventListener('click', () => {
 })
 
 //MODAL1
+let previous = document.querySelector('.inscription2')
+//
+previous.addEventListener('click',()=>{
+    modal_glob.classList.add('bg-active')
+    modal_glob2.classList.remove('bg-active2')
+})
+//
+console.log(previous);
 let modal1 = document.querySelector('.mod-part1')
 let connex = document.querySelector('.connex')
 let modal_glob = document.querySelector('.modal-glob')
